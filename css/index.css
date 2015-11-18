@@ -1,9 +1,37 @@
+/* acoordion behavior */
 .accordion-content {
   height: 0;
   overflow-y: hidden;
   transition: height 350ms;
 }
 
+.accordion-header .caret { transform: rotate(-90deg); }
+.accordion-header:hover .caret,
+.accordion-header.open .caret { transform: rotate(0); }
+
 .accordion-header.open + .accordion-content {
   height: auto;
+}
+
+/* accordion styling */
+/* headers */
+
+.accordion-header {
+  text-align: left;
+  background-color: #FFF;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCC), to(#FFF));
+  background: -webkit-linear-gradient(top, #CCC, #FFF);
+  background: -moz-linear-gradient(top, #CCC, #FFF,);
+  background: -ms-linear-gradient(top, #CCC, #FFF,);
+  background: -o-linear-gradient(top, #CCC, #FFF,);
+}
+
+.accordion-header:hover,
+.accordion-header.open {
+  background-color: #FFF;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#CCC));
+  background: -webkit-linear-gradient(top, #FFF, #CCC);
+  background: -moz-linear-gradient(top, #FFF, #CCC,);
+  background: -ms-linear-gradient(top, #FFF, #CCC,);
+  background: -o-linear-gradient(top, #FFF, #CCC,);
 }
