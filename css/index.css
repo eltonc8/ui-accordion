@@ -1,0 +1,9 @@
+.accordion-content {
+  height: 0;
+  overflow-y: hidden;
+  transition: height 350ms;
+}
+
+.accordion-header.open + .accordion-content {
+  height: auto;
+}
