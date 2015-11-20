@@ -65,3 +65,10 @@
   max-width: 200px;
   margin: 1em;
 }
+
+.accordion-content.text-center {
+  display: flex;
+  align-items: center;
+}
+
+.accordion-content.text-center img { margin: auto; }
